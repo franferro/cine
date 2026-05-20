@@ -1,6 +1,4 @@
-/* ==========================================================================
-   ESTRUCTURA PRINCIPAL (HEADER, SIDEBAR, FOOTER)
-   ========================================================================== */
+/*  ESTRUCTURA PRINCIPAL */
 .wrapper {
     display: flex;
     flex: 1;
@@ -168,10 +166,6 @@ footer a {
     }
 }
 
-/* ==========================================================================
-   MENÚ RESPONSIVO INTERACTIVO (100% PURE CSS - SIN JAVASCRIPT)
-   ========================================================================== */
-
 /* Estilo del botón (que ahora es un label) oculto en ordenador */
 .btn-menu-movil {
     display: none;
@@ -227,7 +221,7 @@ footer a {
         padding: 15px 20px;
     }
 
-    /* --- AQUÍ ESTÁ LA MAGIA DEL CHECKBOX --- */
+    /* ---CHECKBOX --- */
 
     /* 1. Cuando haces clic en el label, el checkbox se activa y mostramos la sidebar */
     #menuToggle:checked~.sidebar {
