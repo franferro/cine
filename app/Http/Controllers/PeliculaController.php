@@ -9,10 +9,10 @@ use App\Models\Pelicula;
 class PeliculaController extends Controller
 {
     public function index()
-    {
-        $peliculas = Pelicula::all(); 
-        return view('cartelera', compact('peliculas')); 
-    }
+{
+    $peliculas = Pelicula::whereHas('sesiones', function ($query) {$query->where('hora_inicio', '>=', now()); })->get(); 
+    return view('cartelera', compact('peliculas')); 
+}
 
     public function create()
     {

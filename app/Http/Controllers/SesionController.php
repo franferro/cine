@@ -11,7 +11,7 @@ class SesionController extends Controller
 {
     public function index()
     {
-        $sesiones = Sesion::all();
+        $sesiones = Sesion::where('hora_inicio', '>=', now())->get();
         return view('sesiones_index', ['sesiones' => $sesiones]);
     }
 

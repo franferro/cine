@@ -18,7 +18,6 @@
             <div class="form-grupo form-espaciado">
                 <label>ID de la Película</label>
                 <input type="number" name="id_pelicula" required placeholder="Ej: 5" class="form-input input-premium">
-                <small class="form-ayuda">Introduce el código numérico de la película.</small>
             </div>
 
             <div class="form-grupo form-espaciado">

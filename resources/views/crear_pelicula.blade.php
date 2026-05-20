@@ -35,7 +35,6 @@
                 <div class="form-grupo">
                     <label>Archivo Cartel</label>
                     <input type="text" name="foto_cartel" placeholder="ej: matrix.jpg" class="form-input input-premium">
-                    <small class="form-ayuda">Debe estar en /public/carteles/</small>
                 </div>
             </div>
             

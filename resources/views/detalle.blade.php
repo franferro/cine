@@ -42,7 +42,7 @@
                 <h4>🎟️ Selecciona tu sesión:</h4>
 
                 <div class="sesiones-lista">
-                    @forelse($pelicula->sesiones as $sesion)
+                    @forelse($pelicula->sesiones->where('hora_inicio', '>=', now()->toDateTimeString()) as $sesion)
                         <div class="sesion-item">
                             <div class="sesion-hora">
                                 {{ \Carbon\Carbon::parse($sesion->hora_inicio)->format('H:i') }}

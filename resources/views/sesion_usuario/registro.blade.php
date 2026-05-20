@@ -16,7 +16,7 @@
             <div class="form-grid-2">
                 <div class="form-grupo">
                     <label>DNI</label>
-                    <input type="text" name="dni" maxlength="9" placeholder="12345678Z" required class="form-input">
+                    <input type="text" name="dni" maxlength="9" placeholder="77777777A" required class="form-input">
                 </div>
                 <div class="form-grupo">
                     <label>Usuario</label>
