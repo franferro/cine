@@ -42,8 +42,18 @@ public function entrar(Request $request)
         return view('sesion_usuario.registro');
     }
 
-    public function registrar(Request $request) 
+public function registrar(Request $request) 
     {
+        $request->validate([
+            'dni' => 'required|unique:USUARIOS,DNI',
+            'email' => 'required|email|unique:USUARIOS,EMAIL',
+            'username' => 'required',
+            'password' => 'required'
+        ], [
+            'dni.unique' => 'Este DNI ya está registrado en el sistema.',
+            'email.unique' => 'Este correo electrónico ya está en uso.'
+        ]);
+
         DB::table('USUARIOS')->insert([
             'DNI' => $request->dni,
             'USERNAME' => $request->username,
